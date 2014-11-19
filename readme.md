@@ -1,4 +1,4 @@
-statsd-riemann-backend
+statsd-rethinkdb-backend
 ======================
 
 A backend plugin for [Statsd](https://github.com/etsy/statsd/) to forward
