@@ -1,0 +1,15 @@
+{
+  "name": "statsd-rethinkdb-backend",
+  "version": "0.0.0",
+  "description": "A simple StatsD backend to forward packets to RethinkDB",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "statsd",
+    "rethinkdb"
+  ],
+  "author": "Josh Gummersall",
+  "license": "ISC"
+}
