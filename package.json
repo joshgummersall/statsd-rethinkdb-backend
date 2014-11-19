@@ -11,5 +11,9 @@
     "rethinkdb"
   ],
   "author": "Josh Gummersall",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "rethinkdb": "^1.15.0-0",
+    "underscore": "^1.7.0"
+  }
 }
