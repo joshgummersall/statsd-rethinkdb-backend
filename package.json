@@ -1,11 +1,11 @@
 {
   "name": "statsd-rethinkdb-backend",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "A simple StatsD backend to forward flushed metrics to RethinkDB",
   "keywords": ["statsd", "rethinkdb"],
-  "homepage": "https://github.com/joshgummersall/statsd-rethinkdb-backend",
+  "homepage": "https://gitlab.com/joshgummersall/statsd-rethinkdb-backend",
   "bugs": {
-    "url": "https://github.com/joshgummersall/statsd-rethinkdb-backend/issues",
+    "url": "https://gitlab.com/joshgummersall/statsd-rethinkdb-backend/issues",
     "email": "josh@joshgummersall.me"
   },
   "license": "ISC",
@@ -17,7 +17,7 @@
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/joshgummersall/statsd-rethinkdb-backend.git"
+    "url": "https://gitlab.com/joshgummersall/statsd-rethinkdb-backend.git"
   },
   "scripts": {},
   "dependencies": {
