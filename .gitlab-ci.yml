@@ -1,0 +1,7 @@
+image: node:5
+
+before_script:
+  - npm install
+
+build:
+  script: "npm run build"
