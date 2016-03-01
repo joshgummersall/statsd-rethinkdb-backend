@@ -40,7 +40,7 @@ export default class RethinkDB {
   // Log to stdout if the debug flag is set
   log(string) {
     if (this.config.debug) {
-      util.log('[rethinkdb]: ' + string);
+      util.log(`[rethinkdb]: ${string}`);
     }
   }
 
@@ -48,8 +48,8 @@ export default class RethinkDB {
   // That's why we stringify and then parse the metrics
   buildDocument(timestamp, metrics) {
     return JSON.parse(JSON.stringify({
-      timestamp: new Date(timestamp),
-      metrics: metrics
+      metrics,
+      timestamp: new Date(timestamp)
     }));
   }
 
