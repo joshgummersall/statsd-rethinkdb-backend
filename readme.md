@@ -32,6 +32,12 @@ for complete configuration example).
 
 There are several configuration options that are available for this backend.
 
+#### `package`
+
+Allows you to specify which version of the `rethinkdb` module that is used to
+perform RethinkDB operations. Each version of RethinkDB requires its clients to
+be the same version.
+
 #### `host`, `port`
 
 Include the `host` and `port` where your RethinkDB instance is running.
@@ -46,16 +52,17 @@ Set to true to get some logging included.
 
 ## Example Configuration
 
-```json
+```js
 {
-  "backends": ["./node_modules/statsd-rethinkdb-backend/index"],
+  backends: ["./node_modules/statsd-rethinkdb-backend/index"],
 
-  "rethinkdb": {
-    "host": "localhost",
-    "port": 28105,
-    "db": "some_database",
-    "table": "some_table",
-    "debug": true
+  rethinkdb: {
+    package: require('rethinkdb'),
+    host: "localhost",
+    port: 28105,
+    db: "some_database",
+    table: "some_table",
+    debug: true
   }
 }
 ```

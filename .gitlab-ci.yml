@@ -1,0 +1,10 @@
+image: node:5
+
+before_script:
+  - npm install
+
+lint:
+  script: "npm run lint"
+
+build:
+  script: "npm run build"
