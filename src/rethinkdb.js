@@ -6,6 +6,7 @@ import util from 'util';
 export default class RethinkDB {
   constructor(startupTime, config, emitter) {
     this.config = config.rethinkdb;
+    this.rethinkdb = this.config.package || rethinkdb;
     this.connection = null;
     emitter.on('flush', _.bind(this.onFlush, this));
   }
@@ -19,7 +20,7 @@ export default class RethinkDB {
     }
 
     // Connect and set self connection
-    rethinkdb.connect({
+    this.rethinkdb.connect({
       host: this.config.host,
       port: this.config.port
     }, (err, connection) => {
@@ -59,7 +60,7 @@ export default class RethinkDB {
       },
 
       (connection, callback) => {
-        rethinkdb
+        this.rethinkdb
           .db(this.config.db)
           .table(this.config.table)
           .insert(this.buildDocument(timestamp, metrics))
