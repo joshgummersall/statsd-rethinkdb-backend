@@ -24,7 +24,7 @@ for complete configuration example).
 
 ```json
 {
-  "backends": ["./node_modules/statsd-rethinkdb-backend/index"]
+  "backends": ["statsd-rethinkdb-backend"]
 }
 ```
 
@@ -54,7 +54,7 @@ Set to true to get some logging included.
 
 ```js
 {
-  backends: ["./node_modules/statsd-rethinkdb-backend/index"],
+  backends: ["statsd-rethinkdb-backend"],
 
   rethinkdb: {
     package: require('rethinkdb'),
