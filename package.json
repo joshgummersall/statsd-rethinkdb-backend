@@ -6,14 +6,14 @@
     "statsd",
     "rethinkdb"
   ],
-  "homepage": "https://gitlab.com/joshgummersall/statsd-rethinkdb-backend",
+  "homepage": "https://github.com/joshgummersall/statsd-rethinkdb-backend",
   "scripts": {
-    "build": "node_modules/.bin/babel src/ -d lib/",
-    "prepublish": "npm run build",
+    "compile": "node_modules/.bin/babel src/ -d lib/",
+    "prepublish": "npm run compile",
     "lint": "node_modules/.bin/eslint src/** test/**"
   },
   "bugs": {
-    "url": "https://gitlab.com/joshgummersall/statsd-rethinkdb-backend/issues",
+    "url": "https://github.com/joshgummersall/statsd-rethinkdb-backend/issues",
     "email": "josh@joshgummersall.me"
   },
   "license": "ISC",
@@ -25,7 +25,7 @@
   "main": "lib/index.js",
   "repository": {
     "type": "git",
-    "url": "https://gitlab.com/joshgummersall/statsd-rethinkdb-backend.git"
+    "url": "https://github.com/joshgummersall/statsd-rethinkdb-backend.git"
   },
   "dependencies": {
     "async": "^1.5.2",

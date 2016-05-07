@@ -69,6 +69,6 @@ Set to true to get some logging included.
 
 ## Contributing
 
-Feel free to [leave issues here](https://gitlab.com/joshgummersall/statsd-rethinkdb-backend/issues)
+Feel free to [leave issues here](https://github.com/joshgummersall/statsd-rethinkdb-backend/issues)
 or fork the project and submit pull requests. If there is a feature you would like added
 just submit an issue describing the feature and I will do my best.
