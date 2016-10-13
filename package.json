@@ -1,6 +1,6 @@
 {
   "name": "statsd-rethinkdb-backend",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "A simple StatsD backend to forward flushed metrics to RethinkDB",
   "keywords": [
     "statsd",
