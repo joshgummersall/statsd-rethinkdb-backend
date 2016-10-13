@@ -47,10 +47,9 @@ export default class RethinkDB {
   // Note: RethinkDB is very picky about keys mapped to `undefined`.
   // That's why we stringify and then parse the metrics
   buildDocument(timestamp, metrics) {
-    return JSON.parse(JSON.stringify({
-      metrics,
-      timestamp: new Date(timestamp)
-    }));
+    let doc = JSON.parse(JSON.stringify({metrics}));
+    doc.timestamp = new Date(timestamp * 1000);
+    return doc;
   }
 
   onFlush(timestamp, metrics) {
